@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7DB5FF35CEAF1A76085740EB /* Pods_bzb_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398434E345B32BEE0112B116 /* Pods_bzb_demo.framework */; };
+		815DA8A427C5F53300A48EF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DA8A327C5F53300A48EF0 /* LoginViewController.swift */; };
+		815DA8A827C60F0400A48EF0 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DA8A727C60F0400A48EF0 /* AppTheme.swift */; };
 		81E4043C27C5D70500796D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4043B27C5D70500796D47 /* AppDelegate.swift */; };
 		81E4043E27C5D70500796D47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4043D27C5D70500796D47 /* SceneDelegate.swift */; };
 		81E4044027C5D70500796D47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4043F27C5D70500796D47 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		09EBD0E980B088699117DA3C /* Pods-bzb_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bzb_demo.debug.xcconfig"; path = "Target Support Files/Pods-bzb_demo/Pods-bzb_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		398434E345B32BEE0112B116 /* Pods_bzb_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bzb_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8779EFCD85928E546FBE7B /* Pods-bzb_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bzb_demo.release.xcconfig"; path = "Target Support Files/Pods-bzb_demo/Pods-bzb_demo.release.xcconfig"; sourceTree = "<group>"; };
+		815DA8A327C5F53300A48EF0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		815DA8A727C60F0400A48EF0 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		81E4043827C5D70500796D47 /* bzb_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bzb_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E4043B27C5D70500796D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E4043D27C5D70500796D47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		815DA8A927C60F1C00A48EF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				815DA8A327C5F53300A48EF0 /* LoginViewController.swift */,
+				81E4043F27C5D70500796D47 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		815DA8AA27C60F2800A48EF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				815DA8A727C60F0400A48EF0 /* AppTheme.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		815DA8AB27C60F2D00A48EF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		81E4042F27C5D70500796D47 = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +101,10 @@
 			children = (
 				81E4043B27C5D70500796D47 /* AppDelegate.swift */,
 				81E4043D27C5D70500796D47 /* SceneDelegate.swift */,
-				81E4043F27C5D70500796D47 /* ViewController.swift */,
 				81E4044127C5D70500796D47 /* Main.storyboard */,
+				815DA8AB27C60F2D00A48EF0 /* View */,
+				815DA8AA27C60F2800A48EF0 /* Model */,
+				815DA8A927C60F1C00A48EF0 /* Controller */,
 				81E4044427C5D70500796D47 /* Assets.xcassets */,
 				81E4044627C5D70500796D47 /* LaunchScreen.storyboard */,
 				81E4044927C5D70500796D47 /* Info.plist */,
@@ -88,7 +118,6 @@
 				09EBD0E980B088699117DA3C /* Pods-bzb_demo.debug.xcconfig */,
 				6A8779EFCD85928E546FBE7B /* Pods-bzb_demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +132,7 @@
 				81E4043427C5D70500796D47 /* Sources */,
 				81E4043527C5D70500796D47 /* Frameworks */,
 				81E4043627C5D70500796D47 /* Resources */,
+				6260BC42CC7F0609C96948A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +190,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6260BC42CC7F0609C96948A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bzb_demo/Pods-bzb_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bzb_demo/Pods-bzb_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bzb_demo/Pods-bzb_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EACFC8D4F99F22DFC8F61DE6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,9 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815DA8A427C5F53300A48EF0 /* LoginViewController.swift in Sources */,
 				81E4044027C5D70500796D47 /* ViewController.swift in Sources */,
 				81E4043C27C5D70500796D47 /* AppDelegate.swift in Sources */,
 				81E4043E27C5D70500796D47 /* SceneDelegate.swift in Sources */,
+				815DA8A827C60F0400A48EF0 /* AppTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +397,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +426,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

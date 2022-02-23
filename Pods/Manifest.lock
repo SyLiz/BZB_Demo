@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 4f369921b2203b1ba4bd731ce8a656cf604b3f26
+PODS:
+  - DTGradientButton (0.1.3)
+
+DEPENDENCIES:
+  - DTGradientButton
+
+SPEC REPOS:
+  trunk:
+    - DTGradientButton
+
+SPEC CHECKSUMS:
+  DTGradientButton: 6f0f696cd433255d226c05e4ab047d991d13d4ef
+
+PODFILE CHECKSUM: 3ffe1e49dbc022fa085f49981e1002dc3153cd41
 
 COCOAPODS: 1.11.2

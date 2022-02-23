@@ -1,24 +1,293 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="bzb_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRU-at-CAm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rz7-6c-trB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="o32-e4-xqc">
+                                        <rect key="frame" x="83" y="86" width="248" height="62.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrT-eZ-Wzj">
+                                        <rect key="frame" x="69.5" y="176.5" width="275.5" height="35"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Please Login to your Account">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.094117647058823528" green="0.12549019607843137" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="22" name="SukhumvitSet-Text"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfB-mJ-jkB">
+                                        <rect key="frame" x="0.0" y="229.5" width="414" height="666.5"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCd-6S-4tb">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="666.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rmd-wF-RrS">
+                                                        <rect key="frame" x="18" y="42" width="378" height="128"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Username" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kM0-tq-MiH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="8ze-qr-Gxx"/>
+                                                                </constraints>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="text">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Password" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yg-Vo-0CS">
+                                                                <rect key="frame" x="0.0" y="78" width="378" height="50"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="text">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ta-Lw-7GY">
+                                                        <rect key="frame" x="256" y="178" width="140" height="40.5"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Forgot password?">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.094119999999999995" green="0.12548999999999999" blue="0.15293999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="18" name="SukhumvitSet-SemiBold"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                        <integer key="NSUnderline" value="1"/>
+                                                                        <color key="NSUnderlineColor" red="0.094119999999999995" green="0.12548999999999999" blue="0.15293999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QVF-bl-S2Q">
+                                                        <rect key="frame" x="18" y="236.5" width="378" height="182"/>
+                                                        <subviews>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZdH-zU-xjw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="50"/>
+                                                                <color key="backgroundColor" name="Login btn Top"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="bwh-YI-YLy"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.090196078430000007" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Login">
+                                                                            <attributes>
+                                                                                <color key="NSColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <font key="NSFont" size="20" name="SukhumvitSet-Bold"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRE-qe-QTm">
+                                                                <rect key="frame" x="0.0" y="66" width="378" height="50"/>
+                                                                <color key="backgroundColor" name="AccentColor"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Login with Facebook">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="20" name="SukhumvitSet-Bold"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxj-nq-jXL">
+                                                                <rect key="frame" x="0.0" y="132" width="378" height="50"/>
+                                                                <color key="backgroundColor" name="Apple Botton"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Login with Apple ID">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="20" name="SukhumvitSet-Bold"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SV6-eF-Zys" userLabel="Don't have an account ?">
+                                                        <rect key="frame" x="18" y="524.5" width="378" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="utE-8V-msv"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Don't have an account ? ">
+                                                                    <attributes>
+                                                                        <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                                <fragment content="Register">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="20" name="SukhumvitSet-SemiBold"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ag-IZ-Ylg">
+                                                        <rect key="frame" x="18" y="442.5" width="378" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="2Jv-eg-qJx"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Login with Device">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="20" name="SukhumvitSet-Bold"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Rmd-wF-RrS" firstAttribute="leading" secondItem="fL1-oy-clw" secondAttribute="leading" constant="18" id="24u-fm-YKH"/>
+                                                    <constraint firstItem="3ta-Lw-7GY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fL1-oy-clw" secondAttribute="leading" constant="18" id="5E2-p4-lK7"/>
+                                                    <constraint firstItem="fL1-oy-clw" firstAttribute="trailing" secondItem="SV6-eF-Zys" secondAttribute="trailing" constant="18" id="86S-vf-YCI"/>
+                                                    <constraint firstItem="Rmd-wF-RrS" firstAttribute="centerX" secondItem="SmR-Oh-nCD" secondAttribute="centerX" id="8Da-79-rtM"/>
+                                                    <constraint firstItem="Rmd-wF-RrS" firstAttribute="top" secondItem="SmR-Oh-nCD" secondAttribute="top" constant="42" id="8dN-6Y-6UT"/>
+                                                    <constraint firstItem="SV6-eF-Zys" firstAttribute="top" secondItem="6Ag-IZ-Ylg" secondAttribute="bottom" constant="32" id="C4e-bI-zTP"/>
+                                                    <constraint firstItem="3ta-Lw-7GY" firstAttribute="top" secondItem="Rmd-wF-RrS" secondAttribute="bottom" constant="8" id="LHq-0W-KQD"/>
+                                                    <constraint firstItem="SmR-Oh-nCD" firstAttribute="bottom" secondItem="SV6-eF-Zys" secondAttribute="bottom" constant="34" id="N88-U4-LGH"/>
+                                                    <constraint firstItem="fL1-oy-clw" firstAttribute="trailing" secondItem="6Ag-IZ-Ylg" secondAttribute="trailing" constant="18" id="PA6-TT-x4w"/>
+                                                    <constraint firstItem="6Ag-IZ-Ylg" firstAttribute="top" secondItem="QVF-bl-S2Q" secondAttribute="bottom" constant="24" id="R8Z-eo-rHu"/>
+                                                    <constraint firstItem="QVF-bl-S2Q" firstAttribute="top" secondItem="3ta-Lw-7GY" secondAttribute="bottom" constant="18" id="REu-wc-nSh"/>
+                                                    <constraint firstItem="6Ag-IZ-Ylg" firstAttribute="leading" secondItem="fL1-oy-clw" secondAttribute="leading" constant="18" id="adD-Nv-2Hr"/>
+                                                    <constraint firstItem="fL1-oy-clw" firstAttribute="trailing" secondItem="Rmd-wF-RrS" secondAttribute="trailing" constant="18" id="aqB-d0-P9R"/>
+                                                    <constraint firstItem="SV6-eF-Zys" firstAttribute="leading" secondItem="fL1-oy-clw" secondAttribute="leading" constant="18" id="bb6-D3-7Tq"/>
+                                                    <constraint firstItem="fL1-oy-clw" firstAttribute="trailing" secondItem="QVF-bl-S2Q" secondAttribute="trailing" constant="18" id="fpN-jE-WJR"/>
+                                                    <constraint firstItem="QVF-bl-S2Q" firstAttribute="leading" secondItem="fL1-oy-clw" secondAttribute="leading" constant="18" id="h4n-uk-iEX"/>
+                                                    <constraint firstItem="fL1-oy-clw" firstAttribute="trailing" secondItem="3ta-Lw-7GY" secondAttribute="trailing" constant="18" id="yCe-Oc-qcK"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="SmR-Oh-nCD"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="fL1-oy-clw"/>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="SCd-6S-4tb" firstAttribute="top" secondItem="UfB-mJ-jkB" secondAttribute="top" id="2Kx-Mg-KJP"/>
+                                            <constraint firstItem="SCd-6S-4tb" firstAttribute="leading" secondItem="UfB-mJ-jkB" secondAttribute="leading" id="2XF-dC-Ubp"/>
+                                            <constraint firstAttribute="trailing" secondItem="SCd-6S-4tb" secondAttribute="trailing" id="WDk-uz-tnP"/>
+                                            <constraint firstAttribute="bottom" secondItem="SCd-6S-4tb" secondAttribute="bottom" id="oWs-Oi-ybq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rrT-eZ-Wzj" firstAttribute="centerX" secondItem="LRU-at-CAm" secondAttribute="centerX" id="0Ta-4t-G3S"/>
+                                    <constraint firstItem="o32-e4-xqc" firstAttribute="height" secondItem="LRU-at-CAm" secondAttribute="height" multiplier="0.07" id="5jb-ze-QQz"/>
+                                    <constraint firstItem="UfB-mJ-jkB" firstAttribute="leading" secondItem="LRU-at-CAm" secondAttribute="leading" id="65u-iF-Ojo"/>
+                                    <constraint firstItem="rz7-6c-trB" firstAttribute="leading" secondItem="LRU-at-CAm" secondAttribute="leading" id="FfC-hi-MyG"/>
+                                    <constraint firstItem="UfB-mJ-jkB" firstAttribute="top" secondItem="rrT-eZ-Wzj" secondAttribute="bottom" constant="18" id="Vmf-iM-0pd"/>
+                                    <constraint firstItem="rrT-eZ-Wzj" firstAttribute="top" secondItem="o32-e4-xqc" secondAttribute="bottom" constant="28" id="WSH-jY-VRi"/>
+                                    <constraint firstAttribute="trailing" secondItem="rz7-6c-trB" secondAttribute="trailing" id="gLz-Qf-YcY"/>
+                                    <constraint firstAttribute="bottom" secondItem="UfB-mJ-jkB" secondAttribute="bottom" id="nix-ok-oPr"/>
+                                    <constraint firstItem="o32-e4-xqc" firstAttribute="top" secondItem="LRU-at-CAm" secondAttribute="top" constant="86" id="pS7-Lr-Xn2"/>
+                                    <constraint firstAttribute="bottom" secondItem="rz7-6c-trB" secondAttribute="bottom" id="pzD-lK-34E"/>
+                                    <constraint firstAttribute="trailing" secondItem="UfB-mJ-jkB" secondAttribute="trailing" id="sdK-eT-Xpe"/>
+                                    <constraint firstItem="rz7-6c-trB" firstAttribute="top" secondItem="LRU-at-CAm" secondAttribute="top" id="ufs-wk-60M"/>
+                                    <constraint firstItem="o32-e4-xqc" firstAttribute="centerX" secondItem="LRU-at-CAm" secondAttribute="centerX" id="vhf-pc-aTD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o32-e4-xqc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="Azd-Hs-bG3"/>
+                            <constraint firstAttribute="bottom" secondItem="LRU-at-CAm" secondAttribute="bottom" id="O5w-Da-QYK"/>
+                            <constraint firstItem="LRU-at-CAm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OiC-Cl-IHO"/>
+                            <constraint firstItem="LRU-at-CAm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hUT-vO-BIn"/>
+                            <constraint firstItem="LRU-at-CAm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ohg-dd-IlW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appleButton" destination="sxj-nq-jXL" id="893-OT-zf9"/>
+                        <outlet property="facebookButton" destination="fRE-qe-QTm" id="u11-c9-iud"/>
+                        <outlet property="fieldBackground" destination="UfB-mJ-jkB" id="bpf-im-fRz"/>
+                        <outlet property="loginButton" destination="ZdH-zU-xjw" id="sGL-ib-I2P"/>
+                        <outlet property="loginDeviceButton" destination="6Ag-IZ-Ylg" id="Bg7-fx-6lL"/>
+                        <outlet property="passwordField" destination="3yg-Vo-0CS" id="KdH-K5-XDZ"/>
+                        <outlet property="userNameField" destination="kM0-tq-MiH" id="rEa-EY-ow9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="206" height="48"/>
+        <image name="background" width="414" height="736"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Apple Botton">
+            <color red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Login btn Top">
+            <color red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

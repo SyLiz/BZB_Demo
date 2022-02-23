@@ -7,51 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10F3D68219C725E3CB19BBB376139974 /* Pods-bzb_demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FC7B5B8D2B2130C13B5BE4119CEA6E7 /* Pods-bzb_demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86EDD73FAF2C9523735C73FF63714EB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9A2EF596842394FC7A29430B7821B786 /* Pods-bzb_demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 743A38C7F47F83DAAF860534503F151D /* Pods-bzb_demo-dummy.m */; };
+		20ED62204F803E83177754F8B3C6C388 /* Pods-bzb_demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9CBE320368B6A87D5CEA9FFBAD092 /* Pods-bzb_demo-dummy.m */; };
+		37D2839ADACE73175490197C945DEDBA /* DTGradientButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D461E033EEDE485B63878F0AB3A339 /* DTGradientButton-dummy.m */; };
+		43474980BCB5551D5F808F7628B0924B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		56DEC5D2C6769C2BB145F911F83F327C /* DTGradientButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5B9F9D9918F152AE88A18DBB952335 /* DTGradientButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		651F7397C5DBE6F4BECAD2EECB6B4B5F /* Pods-bzb_demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2757CA8CB9AB9763E758DB110D643889 /* Pods-bzb_demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DE07A17BF100E77D7F96B80B4A465E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C71C1D4657EE0F909028C45FE8C0CEF5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B4D21337AF74D2DDF8D3F463F22043 /* UIImageExtension.swift */; };
+		FF42F9EB1F0DFC90F3DE8D1838F1A22F /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B156DE76950E8A5190C77DD2A1CF5 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BAE47B76CB78993AD99ACE42291103B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B9E3755BDD4C67758F8BA2D83197AF;
+			remoteInfo = DTGradientButton;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		05EA7454D39E972A83ECFEA697BAF6E1 /* Pods-bzb_demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bzb_demo-Info.plist"; sourceTree = "<group>"; };
-		72FD98197C05551FDB72EB629FFC5AD6 /* Pods-bzb_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bzb_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		1A8410928F9FDA63641D25A83C61EC05 /* Pods-bzb_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bzb_demo.release.xcconfig"; sourceTree = "<group>"; };
+		1D5B9F9D9918F152AE88A18DBB952335 /* DTGradientButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTGradientButton-umbrella.h"; sourceTree = "<group>"; };
+		25AAE1A120E3F9C56219E67A18532B11 /* DTGradientButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DTGradientButton.modulemap; sourceTree = "<group>"; };
+		2757CA8CB9AB9763E758DB110D643889 /* Pods-bzb_demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-bzb_demo-umbrella.h"; sourceTree = "<group>"; };
+		3B8B156DE76950E8A5190C77DD2A1CF5 /* UIButtonExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = DTGradientButton/Classes/UIButtonExtension.swift; sourceTree = "<group>"; };
+		5C2980D0C7E17F6F51622CE2F16B4227 /* Pods-bzb_demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-bzb_demo-frameworks.sh"; sourceTree = "<group>"; };
+		68F358CFBA4B1696D061EEC49D5CA1BA /* DTGradientButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTGradientButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AAD05552897667CF4D7CBE2F26407DB /* DTGradientButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTGradientButton.debug.xcconfig; sourceTree = "<group>"; };
+		6F5AD048731D57C314B3003E359280AF /* Pods-bzb_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bzb_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		743A38C7F47F83DAAF860534503F151D /* Pods-bzb_demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-bzb_demo-dummy.m"; sourceTree = "<group>"; };
-		7FC7B5B8D2B2130C13B5BE4119CEA6E7 /* Pods-bzb_demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-bzb_demo-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0F7A7E3808BBDD484957EFD573626F1 /* Pods-bzb_demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-bzb_demo.modulemap"; sourceTree = "<group>"; };
+		8B37966D292A6A43840A81A7BDB7D455 /* DTGradientButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DTGradientButton-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A65D95ECEC593EC99FDF6EA5DA8B8CBE /* Pods-bzb_demo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-bzb_demo"; path = Pods_bzb_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF465CC4BAF9F315264FFB2CABB84A6B /* Pods-bzb_demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bzb_demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		D60CD8B088F6D6164918C7AF87CA32A8 /* Pods-bzb_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bzb_demo.release.xcconfig"; sourceTree = "<group>"; };
-		E459CA5EA711930C85F8422E27C3ECC3 /* Pods-bzb_demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-bzb_demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B0FD8496695EE232D9D56BFEC5608C19 /* DTGradientButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTGradientButton-prefix.pch"; sourceTree = "<group>"; };
+		D1C79E9F4D0F58EE27662CA17A3A89BA /* Pods-bzb_demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bzb_demo-Info.plist"; sourceTree = "<group>"; };
+		E0D461E033EEDE485B63878F0AB3A339 /* DTGradientButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTGradientButton-dummy.m"; sourceTree = "<group>"; };
+		E1640571C7C05630ABB1878FA0BC6492 /* Pods-bzb_demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-bzb_demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E3B4D21337AF74D2DDF8D3F463F22043 /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = DTGradientButton/Classes/UIImageExtension.swift; sourceTree = "<group>"; };
+		E9A9CBE320368B6A87D5CEA9FFBAD092 /* Pods-bzb_demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-bzb_demo-dummy.m"; sourceTree = "<group>"; };
+		F86F92853733D22EBA3111D1AC9797F6 /* Pods-bzb_demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-bzb_demo.modulemap"; sourceTree = "<group>"; };
+		FDB6D127A90D9AA3613B87E7DF98F78C /* DTGradientButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTGradientButton.release.xcconfig; sourceTree = "<group>"; };
+		FDE6584C735268ED290429EE05BB8BDC /* Pods-bzb_demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bzb_demo-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		30D60E544DFB29F5F5428A6769512F98 /* Frameworks */ = {
+		1906DAA5B36CF7692591F2ADB5124246 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86EDD73FAF2C9523735C73FF63714EB0 /* Foundation.framework in Frameworks */,
+				43474980BCB5551D5F808F7628B0924B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F71F838EBFC5C9AFAA2698029CA97E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE07A17BF100E77D7F96B80B4A465E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17F1CAA6BD46EF03527380C09362519A /* Pods-bzb_demo */ = {
+		1572BAD12A5745B93E20AF65AA2725ED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A0F7A7E3808BBDD484957EFD573626F1 /* Pods-bzb_demo.modulemap */,
-				E459CA5EA711930C85F8422E27C3ECC3 /* Pods-bzb_demo-acknowledgements.markdown */,
-				CF465CC4BAF9F315264FFB2CABB84A6B /* Pods-bzb_demo-acknowledgements.plist */,
-				743A38C7F47F83DAAF860534503F151D /* Pods-bzb_demo-dummy.m */,
-				05EA7454D39E972A83ECFEA697BAF6E1 /* Pods-bzb_demo-Info.plist */,
-				7FC7B5B8D2B2130C13B5BE4119CEA6E7 /* Pods-bzb_demo-umbrella.h */,
-				72FD98197C05551FDB72EB629FFC5AD6 /* Pods-bzb_demo.debug.xcconfig */,
-				D60CD8B088F6D6164918C7AF87CA32A8 /* Pods-bzb_demo.release.xcconfig */,
+				25AAE1A120E3F9C56219E67A18532B11 /* DTGradientButton.modulemap */,
+				E0D461E033EEDE485B63878F0AB3A339 /* DTGradientButton-dummy.m */,
+				8B37966D292A6A43840A81A7BDB7D455 /* DTGradientButton-Info.plist */,
+				B0FD8496695EE232D9D56BFEC5608C19 /* DTGradientButton-prefix.pch */,
+				1D5B9F9D9918F152AE88A18DBB952335 /* DTGradientButton-umbrella.h */,
+				6AAD05552897667CF4D7CBE2F26407DB /* DTGradientButton.debug.xcconfig */,
+				FDB6D127A90D9AA3613B87E7DF98F78C /* DTGradientButton.release.xcconfig */,
 			);
-			name = "Pods-bzb_demo";
-			path = "Target Support Files/Pods-bzb_demo";
+			name = "Support Files";
+			path = "../Target Support Files/DTGradientButton";
+			sourceTree = "<group>";
+		};
+		39F92882F5705D7347CB22C6C2D51554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68F358CFBA4B1696D061EEC49D5CA1BA /* DTGradientButton.framework */,
+				A65D95ECEC593EC99FDF6EA5DA8B8CBE /* Pods-bzb_demo */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -62,20 +104,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		78571B5180EC23409B0DF7D4F4A656E3 /* Targets Support Files */ = {
+		BC5A50EE61BEBE8CF8DA0D0C198EFAC1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				17F1CAA6BD46EF03527380C09362519A /* Pods-bzb_demo */,
+				D5E25EAC69D9B2571CB4A846F4A5EF46 /* Pods-bzb_demo */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AEE8AAD3AE61FC29F4BCE831F827B8AA /* Products */ = {
+		CB7FB08456BE8AFAD865B6CF0ABE8E37 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A65D95ECEC593EC99FDF6EA5DA8B8CBE /* Pods-bzb_demo */,
+				FFCE09E0D097E9347BCD7A980730666A /* DTGradientButton */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -83,8 +125,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				AEE8AAD3AE61FC29F4BCE831F827B8AA /* Products */,
-				78571B5180EC23409B0DF7D4F4A656E3 /* Targets Support Files */,
+				CB7FB08456BE8AFAD865B6CF0ABE8E37 /* Pods */,
+				39F92882F5705D7347CB22C6C2D51554 /* Products */,
+				BC5A50EE61BEBE8CF8DA0D0C198EFAC1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,32 +139,86 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D5E25EAC69D9B2571CB4A846F4A5EF46 /* Pods-bzb_demo */ = {
+			isa = PBXGroup;
+			children = (
+				F86F92853733D22EBA3111D1AC9797F6 /* Pods-bzb_demo.modulemap */,
+				E1640571C7C05630ABB1878FA0BC6492 /* Pods-bzb_demo-acknowledgements.markdown */,
+				FDE6584C735268ED290429EE05BB8BDC /* Pods-bzb_demo-acknowledgements.plist */,
+				E9A9CBE320368B6A87D5CEA9FFBAD092 /* Pods-bzb_demo-dummy.m */,
+				5C2980D0C7E17F6F51622CE2F16B4227 /* Pods-bzb_demo-frameworks.sh */,
+				D1C79E9F4D0F58EE27662CA17A3A89BA /* Pods-bzb_demo-Info.plist */,
+				2757CA8CB9AB9763E758DB110D643889 /* Pods-bzb_demo-umbrella.h */,
+				6F5AD048731D57C314B3003E359280AF /* Pods-bzb_demo.debug.xcconfig */,
+				1A8410928F9FDA63641D25A83C61EC05 /* Pods-bzb_demo.release.xcconfig */,
+			);
+			name = "Pods-bzb_demo";
+			path = "Target Support Files/Pods-bzb_demo";
+			sourceTree = "<group>";
+		};
+		FFCE09E0D097E9347BCD7A980730666A /* DTGradientButton */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B156DE76950E8A5190C77DD2A1CF5 /* UIButtonExtension.swift */,
+				E3B4D21337AF74D2DDF8D3F463F22043 /* UIImageExtension.swift */,
+				1572BAD12A5745B93E20AF65AA2725ED /* Support Files */,
+			);
+			path = DTGradientButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A4A79BDF49626145B50239428717AB24 /* Headers */ = {
+		7F74710B21DB75614E70C2D164B65D40 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10F3D68219C725E3CB19BBB376139974 /* Pods-bzb_demo-umbrella.h in Headers */,
+				56DEC5D2C6769C2BB145F911F83F327C /* DTGradientButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8FF3C2ACBFBC050ABFCBB76C3C031D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651F7397C5DBE6F4BECAD2EECB6B4B5F /* Pods-bzb_demo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7F2741E1418C8B91A4C4DD53CEC28393 /* Pods-bzb_demo */ = {
+		19B9E3755BDD4C67758F8BA2D83197AF /* DTGradientButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76F22DE1CEF4DF071E4C46F820F18A2B /* Build configuration list for PBXNativeTarget "Pods-bzb_demo" */;
+			buildConfigurationList = E40DBCA6218C31654AA0CC1C29729E12 /* Build configuration list for PBXNativeTarget "DTGradientButton" */;
 			buildPhases = (
-				A4A79BDF49626145B50239428717AB24 /* Headers */,
-				A58B1B9717733DDB04B0B02237FDCD46 /* Sources */,
-				30D60E544DFB29F5F5428A6769512F98 /* Frameworks */,
-				205204F274D41983F20796B035C4A99B /* Resources */,
+				7F74710B21DB75614E70C2D164B65D40 /* Headers */,
+				3C7C8CD12F8618B253539A61A13F6CA1 /* Sources */,
+				B5F71F838EBFC5C9AFAA2698029CA97E /* Frameworks */,
+				80FF0A467E36749D3FA72C23F7BCD549 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = DTGradientButton;
+			productName = DTGradientButton;
+			productReference = 68F358CFBA4B1696D061EEC49D5CA1BA /* DTGradientButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F2741E1418C8B91A4C4DD53CEC28393 /* Pods-bzb_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21E089D554EC90B8B0C0CD2A025B2CC9 /* Build configuration list for PBXNativeTarget "Pods-bzb_demo" */;
+			buildPhases = (
+				8E8FF3C2ACBFBC050ABFCBB76C3C031D /* Headers */,
+				E5162B08B7E3384BEA77EBC049A8DD3A /* Sources */,
+				1906DAA5B36CF7692591F2ADB5124246 /* Frameworks */,
+				E0301391272E39F8CFA248A39745AB5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA920B133F67A19EADE5C6A251D43A30 /* PBXTargetDependency */,
 			);
 			name = "Pods-bzb_demo";
 			productName = Pods_bzb_demo;
@@ -135,7 +232,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -146,17 +243,25 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = AEE8AAD3AE61FC29F4BCE831F827B8AA /* Products */;
+			productRefGroup = 39F92882F5705D7347CB22C6C2D51554 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				19B9E3755BDD4C67758F8BA2D83197AF /* DTGradientButton */,
 				7F2741E1418C8B91A4C4DD53CEC28393 /* Pods-bzb_demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		205204F274D41983F20796B035C4A99B /* Resources */ = {
+		80FF0A467E36749D3FA72C23F7BCD549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0301391272E39F8CFA248A39745AB5B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,20 +271,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A58B1B9717733DDB04B0B02237FDCD46 /* Sources */ = {
+		3C7C8CD12F8618B253539A61A13F6CA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A2EF596842394FC7A29430B7821B786 /* Pods-bzb_demo-dummy.m in Sources */,
+				37D2839ADACE73175490197C945DEDBA /* DTGradientButton-dummy.m in Sources */,
+				FF42F9EB1F0DFC90F3DE8D1838F1A22F /* UIButtonExtension.swift in Sources */,
+				C71C1D4657EE0F909028C45FE8C0CEF5 /* UIImageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5162B08B7E3384BEA77EBC049A8DD3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20ED62204F803E83177754F8B3C6C388 /* Pods-bzb_demo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BA920B133F67A19EADE5C6A251D43A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DTGradientButton;
+			target = 19B9E3755BDD4C67758F8BA2D83197AF /* DTGradientButton */;
+			targetProxy = BAE47B76CB78993AD99ACE42291103B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		3B21DEE031A78F671F55735912A1DE43 /* Debug */ = {
+		185FA45C86B6414C2372DA65DDEB46CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72FD98197C05551FDB72EB629FFC5AD6 /* Pods-bzb_demo.debug.xcconfig */;
+			baseConfigurationReference = 1A8410928F9FDA63641D25A83C61EC05 /* Pods-bzb_demo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -193,7 +317,45 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-bzb_demo/Pods-bzb_demo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-bzb_demo/Pods-bzb_demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4690D4692A8B1E0D8D592CF8506FC844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F5AD048731D57C314B3003E359280AF /* Pods-bzb_demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-bzb_demo/Pods-bzb_demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -214,7 +376,42 @@
 			};
 			name = Debug;
 		};
-		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+		7AF50B8C62DA1F7B78DAC76D4B7CB7B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB6D127A90D9AA3613B87E7DF98F78C /* DTGradientButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DTGradientButton/DTGradientButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DTGradientButton/DTGradientButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DTGradientButton/DTGradientButton.modulemap";
+				PRODUCT_MODULE_NAME = DTGradientButton;
+				PRODUCT_NAME = DTGradientButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -280,45 +477,7 @@
 			};
 			name = Debug;
 		};
-		5C38D4308D0681002119776BF71BAE5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D60CD8B088F6D6164918C7AF87CA32A8 /* Pods-bzb_demo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-bzb_demo/Pods-bzb_demo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-bzb_demo/Pods-bzb_demo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -368,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -380,23 +539,66 @@
 			};
 			name = Release;
 		};
+		EFB229C1676C8A7C2BAFD3A181B468EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAD05552897667CF4D7CBE2F26407DB /* DTGradientButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DTGradientButton/DTGradientButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DTGradientButton/DTGradientButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DTGradientButton/DTGradientButton.modulemap";
+				PRODUCT_MODULE_NAME = DTGradientButton;
+				PRODUCT_NAME = DTGradientButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		21E089D554EC90B8B0C0CD2A025B2CC9 /* Build configuration list for PBXNativeTarget "Pods-bzb_demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4214E6946993DF02ED98D89047C64016 /* Debug */,
-				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+				4690D4692A8B1E0D8D592CF8506FC844 /* Debug */,
+				185FA45C86B6414C2372DA65DDEB46CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76F22DE1CEF4DF071E4C46F820F18A2B /* Build configuration list for PBXNativeTarget "Pods-bzb_demo" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B21DEE031A78F671F55735912A1DE43 /* Debug */,
-				5C38D4308D0681002119776BF71BAE5E /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E40DBCA6218C31654AA0CC1C29729E12 /* Build configuration list for PBXNativeTarget "DTGradientButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB229C1676C8A7C2BAFD3A181B468EA /* Debug */,
+				7AF50B8C62DA1F7B78DAC76D4B7CB7B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
