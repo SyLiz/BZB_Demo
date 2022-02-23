@@ -4,7 +4,9 @@
 target 'bzb_demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'DTGradientButton'
+
   # Pods for bzb_demo
+  pod 'IQKeyboardManagerSwift'
+  pod 'DTGradientButton'
 
 end
