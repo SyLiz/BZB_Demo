@@ -1,20 +1,24 @@
 PODS:
+  - ActiveLabel (1.1.0)
   - DTGradientButton (0.1.3)
   - IQKeyboardManagerSwift (6.5.9)
 
 DEPENDENCIES:
+  - ActiveLabel
   - DTGradientButton
   - IQKeyboardManagerSwift
 
 SPEC REPOS:
   trunk:
+    - ActiveLabel
     - DTGradientButton
     - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
   DTGradientButton: 6f0f696cd433255d226c05e4ab047d991d13d4ef
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
 
-PODFILE CHECKSUM: b79a42bea8e19b0f0b0b84ef1b02f2819ebdb45f
+PODFILE CHECKSUM: 206a8a33c89d961d10fbf08ce2c0c676737c4b1d
 
 COCOAPODS: 1.11.2

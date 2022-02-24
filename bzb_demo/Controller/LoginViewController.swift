@@ -10,6 +10,7 @@ import DTGradientButton
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginDeviceButton: UIButton!
     @IBOutlet weak var appleButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
@@ -67,6 +68,15 @@ class LoginViewController: UIViewController {
 
     }
     
+    @IBAction func registerClicked(_ sender: UIButton) {
+        let vc = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
+            if let navigationController = navigationController {
+                navigationController.pushViewController(vc, animated: true)
+            } else {
+                print("Navigation controller unavailable! Use present method.")
+                self.present(vc, animated: true, completion: nil)
+            }
+    }
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }

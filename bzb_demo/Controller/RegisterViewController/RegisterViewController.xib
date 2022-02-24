@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="bzb_demo" customModuleProvider="target">
+            <connections>
+                <outlet property="backToLogin" destination="f3U-Ye-pfD" id="yql-Xu-sNE"/>
+                <outlet property="checkBoxOutlet" destination="1aR-h1-Wyi" id="7Gi-kz-7Bn"/>
+                <outlet property="confirmPasswordField" destination="RQM-Np-WuI" id="hfe-jv-jWh"/>
+                <outlet property="fieldBackground" destination="1ys-iC-qGS" id="gpG-8o-3Ja"/>
+                <outlet property="lastNameField" destination="m2z-od-5Yi" id="ZXo-FU-F5q"/>
+                <outlet property="nameField" destination="LbL-T4-ZnD" id="MAh-D1-SHb"/>
+                <outlet property="passwordField" destination="Kat-Rh-JL4" id="OBS-5g-2az"/>
+                <outlet property="phoneField" destination="msn-vj-d39" id="rPk-Pk-uhc"/>
+                <outlet property="registerButton" destination="duP-at-iIl" id="jq3-0j-lcW"/>
+                <outlet property="termsConditionLabel" destination="FjP-C0-pZe" id="tys-GQ-093"/>
+                <outlet property="usernameField" destination="ON3-FI-uOl" id="poI-p0-6ZB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jri-Ug-sHx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xhV-pD-IRc">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ys-iC-qGS" userLabel="fieldBackground">
+                            <rect key="frame" x="0.0" y="225.5" width="414" height="670.5"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ff3-bh-KSi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="670.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="v43-Vf-1z5">
+                                            <rect key="frame" x="18" y="42" width="378" height="370"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="First name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbL-T4-ZnD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="378" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="Ao6-2X-g3p"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="test">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" textContentType="name"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2z-od-5Yi">
+                                                    <rect key="frame" x="0.0" y="64" width="378" height="50"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="test">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Mobile number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="msn-vj-d39">
+                                                    <rect key="frame" x="0.0" y="128" width="378" height="50"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="test">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-FI-uOl">
+                                                    <rect key="frame" x="0.0" y="192" width="378" height="50"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="test">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kat-Rh-JL4">
+                                                    <rect key="frame" x="0.0" y="256" width="378" height="50"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="test">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RQM-Np-WuI">
+                                                    <rect key="frame" x="0.0" y="320" width="378" height="50"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="test">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjP-C0-pZe">
+                                            <rect key="frame" x="60" y="430" width="336" height="57"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="I agree to">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="18" name="SukhumvitSet-Text"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" ">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="18" name="SukhumvitSet-Text"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="terms &amp; conditions">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="18" name="SukhumvitSet-Text"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" ">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="18" name="SukhumvitSet-Text"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="and">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="18" name="SukhumvitSet-Text"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" ">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="18" name="SukhumvitSet-Text"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="privacy policy">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="18" name="SukhumvitSet-Text"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aR-h1-Wyi">
+                                            <rect key="frame" x="18" y="430" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="9V7-PB-F5v"/>
+                                                <constraint firstAttribute="width" secondItem="1aR-h1-Wyi" secondAttribute="height" multiplier="1:1" id="s7c-UH-Neg"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="unchecked"/>
+                                            <connections>
+                                                <action selector="checkbox:" destination="-1" eventType="touchUpInside" id="SI4-rn-eo2"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="duP-at-iIl">
+                                            <rect key="frame" x="18" y="511" width="378" height="50"/>
+                                            <color key="backgroundColor" name="Login btn Top"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="j3o-Gg-2ff"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.090196078430000007" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Register">
+                                                        <attributes>
+                                                            <color key="NSColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="20" name="SukhumvitSet-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3U-Ye-pfD" userLabel="Don't have an account ?">
+                                            <rect key="frame" x="18" y="593" width="378" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="x7V-gp-Wnu"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="have an account ? ">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="20" name="SukhumvitSet-Text"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Login">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="SukhumvitSet-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                            <connections>
+                                                <action selector="backToLoginClicked:" destination="-1" eventType="touchUpInside" id="YhE-t1-KN4"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="w9j-Il-p27" firstAttribute="trailing" secondItem="v43-Vf-1z5" secondAttribute="trailing" constant="18" id="1PH-cd-EY8"/>
+                                        <constraint firstItem="uQP-N4-JDh" firstAttribute="bottom" secondItem="f3U-Ye-pfD" secondAttribute="bottom" constant="34" id="55e-1r-rbk"/>
+                                        <constraint firstItem="FjP-C0-pZe" firstAttribute="top" secondItem="1aR-h1-Wyi" secondAttribute="top" id="63g-bg-RXz"/>
+                                        <constraint firstItem="w9j-Il-p27" firstAttribute="trailing" secondItem="duP-at-iIl" secondAttribute="trailing" constant="18" id="789-yi-te8"/>
+                                        <constraint firstItem="w9j-Il-p27" firstAttribute="trailing" secondItem="f3U-Ye-pfD" secondAttribute="trailing" constant="18" id="AK8-8t-zLH"/>
+                                        <constraint firstItem="v43-Vf-1z5" firstAttribute="leading" secondItem="w9j-Il-p27" secondAttribute="leading" constant="18" id="BCv-Tw-POw"/>
+                                        <constraint firstItem="1aR-h1-Wyi" firstAttribute="top" secondItem="v43-Vf-1z5" secondAttribute="bottom" constant="18" id="BgE-ov-Bq3"/>
+                                        <constraint firstItem="duP-at-iIl" firstAttribute="top" secondItem="FjP-C0-pZe" secondAttribute="bottom" constant="24" id="HiE-qg-420"/>
+                                        <constraint firstItem="f3U-Ye-pfD" firstAttribute="top" secondItem="duP-at-iIl" secondAttribute="bottom" constant="32" id="RKR-c5-Zus"/>
+                                        <constraint firstItem="v43-Vf-1z5" firstAttribute="centerX" secondItem="uQP-N4-JDh" secondAttribute="centerX" id="aO8-k0-JpD"/>
+                                        <constraint firstItem="1aR-h1-Wyi" firstAttribute="leading" secondItem="w9j-Il-p27" secondAttribute="leading" constant="18" id="cuf-TX-XUO"/>
+                                        <constraint firstItem="f3U-Ye-pfD" firstAttribute="leading" secondItem="w9j-Il-p27" secondAttribute="leading" constant="18" id="eJg-aB-jR4"/>
+                                        <constraint firstItem="w9j-Il-p27" firstAttribute="trailing" secondItem="FjP-C0-pZe" secondAttribute="trailing" constant="18" id="oWQ-8V-tmO"/>
+                                        <constraint firstItem="FjP-C0-pZe" firstAttribute="leading" secondItem="1aR-h1-Wyi" secondAttribute="trailing" constant="12" id="ogh-fI-sx1"/>
+                                        <constraint firstItem="duP-at-iIl" firstAttribute="leading" secondItem="w9j-Il-p27" secondAttribute="leading" constant="18" id="pie-2k-azk"/>
+                                        <constraint firstItem="v43-Vf-1z5" firstAttribute="top" secondItem="uQP-N4-JDh" secondAttribute="top" constant="42" id="z5b-AW-t50"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="contentLayoutGuide" id="uQP-N4-JDh"/>
+                                    <viewLayoutGuide key="frameLayoutGuide" id="w9j-Il-p27"/>
+                                </scrollView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="ff3-bh-KSi" secondAttribute="bottom" id="gLi-0y-PYE"/>
+                                <constraint firstAttribute="trailing" secondItem="ff3-bh-KSi" secondAttribute="trailing" id="iYv-Tk-xL0"/>
+                                <constraint firstItem="ff3-bh-KSi" firstAttribute="top" secondItem="1ys-iC-qGS" secondAttribute="top" id="jsN-qv-dXK"/>
+                                <constraint firstItem="ff3-bh-KSi" firstAttribute="leading" secondItem="1ys-iC-qGS" secondAttribute="leading" id="nco-Sm-fO8"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="9HD-Pe-Ewr">
+                            <rect key="frame" x="83" y="82" width="248" height="62.5"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRa-0r-fTf">
+                            <rect key="frame" x="135.5" y="172.5" width="143.5" height="35"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Please Register">
+                                    <attributes>
+                                        <color key="NSColor" red="0.094117647060000004" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="22" name="SukhumvitSet-Text"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="YRa-0r-fTf" firstAttribute="centerX" secondItem="Jri-Ug-sHx" secondAttribute="centerX" id="1K0-TH-XXx"/>
+                        <constraint firstItem="1ys-iC-qGS" firstAttribute="leading" secondItem="Jri-Ug-sHx" secondAttribute="leading" id="1kA-Bm-1b9"/>
+                        <constraint firstItem="xhV-pD-IRc" firstAttribute="leading" secondItem="Jri-Ug-sHx" secondAttribute="leading" id="E2k-do-AoP"/>
+                        <constraint firstItem="9HD-Pe-Ewr" firstAttribute="centerX" secondItem="Jri-Ug-sHx" secondAttribute="centerX" id="Emf-OK-cP0"/>
+                        <constraint firstAttribute="trailing" secondItem="1ys-iC-qGS" secondAttribute="trailing" id="MNK-Ih-AkE"/>
+                        <constraint firstItem="xhV-pD-IRc" firstAttribute="top" secondItem="Jri-Ug-sHx" secondAttribute="top" id="a49-v0-EYg"/>
+                        <constraint firstItem="9HD-Pe-Ewr" firstAttribute="top" secondItem="Jri-Ug-sHx" secondAttribute="top" constant="82" id="bkA-yS-p4I"/>
+                        <constraint firstAttribute="bottom" secondItem="1ys-iC-qGS" secondAttribute="bottom" id="dkp-40-C90"/>
+                        <constraint firstAttribute="bottom" secondItem="xhV-pD-IRc" secondAttribute="bottom" id="edJ-8u-88o"/>
+                        <constraint firstAttribute="trailing" secondItem="xhV-pD-IRc" secondAttribute="trailing" id="fMi-rS-8Lr"/>
+                        <constraint firstItem="YRa-0r-fTf" firstAttribute="top" secondItem="9HD-Pe-Ewr" secondAttribute="bottom" constant="28" id="sDd-HC-Bkv"/>
+                        <constraint firstItem="1ys-iC-qGS" firstAttribute="top" secondItem="YRa-0r-fTf" secondAttribute="bottom" constant="18" id="xfj-Hp-eLK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jri-Ug-sHx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="15C-qN-6P8"/>
+                <constraint firstItem="9HD-Pe-Ewr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="JHQ-SK-dzI"/>
+                <constraint firstItem="Jri-Ug-sHx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KNk-Ug-fMt"/>
+                <constraint firstAttribute="bottom" secondItem="Jri-Ug-sHx" secondAttribute="bottom" id="Or4-Zr-NWu"/>
+                <constraint firstItem="9HD-Pe-Ewr" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="kP8-x8-n77"/>
+                <constraint firstItem="Jri-Ug-sHx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pZf-9Z-qfS"/>
+            </constraints>
+            <point key="canvasLocation" x="21.739130434782609" y="122.54464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="206" height="48"/>
+        <image name="background" width="414" height="736"/>
+        <image name="unchecked" width="30" height="30"/>
+        <namedColor name="Login btn Top">
+            <color red="0.7839999794960022" green="0.7839999794960022" blue="0.7839999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

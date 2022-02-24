@@ -8,5 +8,5 @@ target 'bzb_demo' do
   # Pods for bzb_demo
   pod 'IQKeyboardManagerSwift'
   pod 'DTGradientButton'
-
+  pod 'ActiveLabel'
 end
